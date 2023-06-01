@@ -117,6 +117,10 @@ audio::-webkit-media-controls-enclosure {
     width: 90px
 }
 
+#main .ctrl ul.jj li.big {
+    width: 140px
+}
+
 #main .ctrl .help {
     border-radius: 15px;
     background-color: #eee;
