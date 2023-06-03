@@ -41,7 +41,8 @@ audio::-webkit-media-controls-enclosure {
 }
 
 #main .top .ji {
-    width: 380px;
+    max-width:350px
+    width: 100%;
     height: 90%;
     box-sizing: border-box;
     position: absolute;
