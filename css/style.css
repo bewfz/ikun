@@ -21,7 +21,7 @@ audio::-webkit-media-controls-enclosure {
     font-size: 22px;
     text-align: center;
     position: absolute;
-    width: 450px;
+    width: 100%;
     padding-top: 22px;
     font-family: 微软雅黑
 }
@@ -41,7 +41,7 @@ audio::-webkit-media-controls-enclosure {
 }
 
 #main .top .ji {
-    width: 90%;
+    width: 405px;
     height: 90%;
     box-sizing: border-box;
     position: absolute;
