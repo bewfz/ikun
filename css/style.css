@@ -96,7 +96,7 @@ audio::-webkit-media-controls-enclosure {
     list-style: none;
     display: -webkit-flex;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap
 }
 
@@ -106,7 +106,7 @@ audio::-webkit-media-controls-enclosure {
     line-height: 50px;
     font-size: 13px;
     background-color: rgb(30, 190, 142);
-    text-align: left;
+    text-align: center;
     margin: 3px;
     padding: 0;
     border-radius: 10px;
