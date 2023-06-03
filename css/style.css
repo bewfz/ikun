@@ -106,7 +106,7 @@ audio::-webkit-media-controls-enclosure {
     line-height: 50px;
     font-size: 13px;
     background-color: rgb(30, 190, 142);
-    text-align: center;
+    text-align: left;
     margin: 3px;
     padding: 0;
     border-radius: 10px;
