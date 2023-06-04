@@ -1,3 +1,6 @@
+function leftFillNum(num, targetLength) {
+    return num.toString().padStart(targetLength, 0);
+  }
 var audio = document.getElementById('audio');
 audio.play();
 var lis = document.querySelectorAll('ul.jj li');
@@ -13,7 +16,9 @@ lis.forEach(li => {
 lis.forEach(li => {
     if (li.getAttribute('m')=='sj') {
         li.onclick = function() {
-            audio.src = './res/' + this.getAttribute('tp') + Math.floor(Math.random() * this.getAttribute('num') + 1) + '.mp3';
+            const rd = (Math.floor(Math.random() * this.getAttribute('num') + 1));
+            const rdStr = leftFillNum(rd, 2);
+            audio.src = './res/' + this.getAttribute('tp') + rdStr + '.mp3';
             audio.play();
             console.log(this.innerHTML)
         }
