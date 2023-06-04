@@ -157,6 +157,23 @@
                 <li m="dz41" class="sange">雪豹闭嘴</li>
                 <li m="dz42" class="sange">你是讨口子吗</li>
                 <li m="dz43" class="sange">你太拽了</li>
+            <div class="gongneng"><span>阿妈</span></div>
+                <li m="ama1" class="big">休息一下吧</li>
+                <li m="ama2" class="big">康个书好不好</li>
+                <li m="ama3" class="big">好好用功读书</li>
+                <li m="ama4" class="big">我在跟你讲话</li>
+                <li m="ama5" class="big">我才讲你两句</li>
+                <li m="ama6" class="big">你在这边打电动</li>
+                <li m="ama7" class="big">又在玩电动哦</li>
+                <li m="sj" tp="ama" num="7" class="big">随机</li>
+            <div class="gongneng"><span>阿伟合计71个</span></div>
+                <li m="sj" tp="aw" num="71">随机</li>
+            <div class="gongneng"><span>杰哥合计63个</span></div>
+                <li m="sj" tp="jg" num="63">随机</li>
+            <div class="gongneng"><span>彬彬合计17个</span></div>
+                <li m="sj" tp="bb" num="17">随机</li>
+            <div class="gongneng"><span>淑慧合计14个</span></div>
+                <li m="sj" tp="sh" num="14">随机</li>
             </ul>
             <div class="help">
             <div class="title">使用帮助</div>
@@ -165,6 +182,7 @@
                     <li>音频<a href="/list.txt">List</a></li>
                     <li>repo<a href="https://github.com/bewfz/ikun">bewfz/ikun</a></li>
                     <li>纯享专辑<a href="https://music.bewfz.com/album/152102375">https://music.bewfz.com/album/152102375</a></li>
+                    <li>由于不想打字了，做了个随机函数<a href="https://github.com/bewfz/ikun/commit/435af69297417efda0c9f6c85f6d47af4425e01a">435af69 </a><a href="https://github.com/bewfz/ikun/commit/bc4d570a5dd40354387469c6e11f5dadb4ddd5ac">bc4d570</a></li>
                 </ul>
             </div>
         </div>
@@ -172,4 +190,7 @@
     </div>
     <audio id="audio" src="media/j.mp3" ontrolslist="nodownload" οncοntextmenu="return false" preload="auto"></audio>
     <script src="js/index.js"></script>
+    <script>
+        document.getElementById("demo").innerHTML = Math.random();
+    </script>
 </body>
