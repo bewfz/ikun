@@ -2,10 +2,21 @@ var audio = document.getElementById('audio');
 audio.play();
 var lis = document.querySelectorAll('ul.jj li');
 lis.forEach(li => {
-    li.onclick = function() {
-        audio.src = './res/' + this.getAttribute('m') + '.mp3';
-        audio.play();
-        console.log(this.innerHTML)
+    if (li.getAttribute('m')!='sj') {
+        li.onclick = function() {
+            audio.src = './res/' + this.getAttribute('m') + '.mp3';
+            audio.play();
+            console.log(this.innerHTML)
+        }
+    }
+});
+lis.forEach(li => {
+    if (li.getAttribute('m')=='sj') {
+        li.onclick = function() {
+            audio.src = './res/' + this.getAttribute('tp') + Math.floor(Math.random() * this.getAttribute('num') + 1) + '.mp3';
+            audio.play();
+            console.log(this.innerHTML)
+        }
     }
 });
 document.querySelector('.s1').onclick = function() {
