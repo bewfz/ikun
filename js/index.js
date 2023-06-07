@@ -1,8 +1,19 @@
 function leftFillNum(num, targetLength) {
     return num.toString().padStart(targetLength, 0);
   }
-var audio = document.getElementById('audio');
-audio.play();
+var userInteracted = false;
+
+// 添加事件监听器来检测用户的活动
+document.addEventListener('mousemove', function() {
+  userInteracted = true;
+});
+
+// 在播放音频之前检查用户是否与页面进行了互动
+if (userInteracted) {
+  audio.play();
+} else {
+  console.log('用户尚未与页面进行互动');
+}
 var lis = document.querySelectorAll('ul.jj li');
 lis.forEach(li => {
     if (li.getAttribute('m')!='sj') {
@@ -24,11 +35,3 @@ lis.forEach(li => {
         }
     }
 });
-document.querySelector('.s1').onclick = function() {
-    audio.currentTime = 0;
-    console.log('重开')
-};
-document.querySelector('.s2').onclick = function() {
-    audio.pause();
-    console.log('停止')
-}
